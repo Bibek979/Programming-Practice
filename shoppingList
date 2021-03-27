@@ -1,0 +1,57 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+class ShoppingList
+{
+
+    int getData(int p)
+    {
+	    ShoppingList obj;
+	    p--;
+	    cout<<"Enter item details";
+	    cout<<"Enter Name";
+	    cin>>obj.item_name[p];
+	    cout<<"Enter Quantity";
+	    cin>>obj.qty[p];
+	    cout<<"Enter the unit price: ";
+	    cin>>obj.unit_price[p];
+	return 0;
+}
+
+
+void displayBill()
+{
+	main obj;
+	int i=0, total, final_total;
+	cout<<"Item name\tUnit Price\tQuantity\tTotal"<<endl;
+	while(no_of_items!=0)
+	{
+		total = unit_price[i]*qty[i];
+		cout<<obj.item_name[i]<<"\t"<<obj.unit_price<<"\t"<<obj.qty<<"\t"<<total<<"\t"<<endl;
+		final_total+=total;
+	}
+	cout<<"___________________________________________________________________________"<<endl;
+	cout<<"Total:                                                       "<<final_total<<endl;
+}
+
+    void main()
+	{
+	    int no_of_items;
+	    int hold_var;
+		cout<<"Enter number of items: ";
+		cin>>no_of_items;
+		
+		int qty[no_of_items], unit_price[no_of_items];
+		string item_name[no_of_items];
+		
+		hold_var = no_of_items;
+		while(no_of_items>0)
+		{
+			getData(no_of_items);
+			hold_var--;
+		}
+		displayBill();
+	}
+};
