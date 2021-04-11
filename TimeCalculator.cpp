@@ -144,3 +144,9 @@ Problems to fix
  1.i have an error where the second to hour is not being returned in float. 
  2. Only if the screen could be cleaned after each iterations. 
  */
+
+/*
+Plans with this program are : - 
+Full fledged Program to calculate
+And to have its own UI.  
+*/
