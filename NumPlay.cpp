@@ -7,6 +7,7 @@ class NumPlay
 {
     public:
         int input;
+
         string num[9] = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
 
         public:
@@ -56,3 +57,9 @@ int main()
         obj.output();
     }    
 }
+
+/*
+There are issues that I need to come back to check like : 
+1. Any other types of input puts the program in a kind of Loop.
+2. To put an option of exit in the program. 
+*/
